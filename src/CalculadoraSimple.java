@@ -17,13 +17,20 @@ public class CalculadoraSimple {
         // Resta
         int resta = a - b;
         System.out.println("Resta: " + resta);
-
+      
         //agrego la multiplicacion
-        int multiplicacion=a*b;
+        int multiplicacion= a * b;
         System.out.println("Multiplicacion: " + multiplicacion);
 
+         //division
+        if(b != 0) {
+    int division = a / b;
+    System.out.println("División: " + division);
+    } else {
+      System.out.println("No se puede dividir por cero");
+    }
+      
         scanner.close();
-
-        
+      
     }
 }
